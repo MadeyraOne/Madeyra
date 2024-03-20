@@ -1,147 +1,155 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-  font-family: "Kdam Thmor Pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
-  box-sizing: border-box;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
 }
-.open{
-  display: flex !important;
+
+.open {
+    display: flex !important;
 }
+
 /* Header styles */
 .header {
-  padding-top: 0.5em 0;
-  height: 5em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: white;
-  transition: height 0.3s;
+    padding-top: 05em 0;
+    height: 5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    transition: height 0.3s;
 }
+
 .basket {
-justify-content: flex-end;
-display: flex;
-position: absolute;
-right: 8%;
-padding-top: -10%;
+    justify-content: flex-end;
+    display: flex;
+    position: absolute;
+    right: 8%;
+    padding-top: -10%;
 }
+
 .header_inner img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
 }
+
 .header_inner a:hover img {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
 .header_logo {
-  font-size: 3em;
-  font-weight: 600;
-  color: black;
+    font-size: 3em;
+    font-weight: 600;
+    color: black;
 }
 
 .header_inner {
-  justify-content: center;
-  display: flex;
-  align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
+
 /*NAVIGATION*/
 nav {
-  font-size: 2em;
-  text-transform: uppercase;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 
 .nav_link {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0.5em;
-  color: black;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.2s linear;
-  font-size: 0.8em;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.5em;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s linear;
+    font-size: 0.8em;
 }
 
 .nav_link:hover {
-  color: #fc6203;
+    color: #fc6203;
 }
 
 .nav_link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0.1em;
-  opacity: 0;
-  transition: opacity 0.3s linear;
-  background-color: black;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.1em;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
 }
 
 .nav_link:hover::after {
-  opacity: 1;
+    opacity: 1;
 }
 
 nav {
-  font-size: 2em;
-  text-transform: uppercase;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 
 .nav_link {
-display: inline-block;
-vertical-align: top;
-margin: 0.5em;
-color: black;
-text-decoration: none;
-position: relative;
-transition: color 0.2s linear;
-font-size: 0.8em;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.5em;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s linear;
+    font-size: 0.8em;
 }
 
 
- /*Line under text in NAV*/
+/*Line under text in NAV*/
 .nav_link:hover {
-color: #fc6203;
+    color: #fc6203;
 }
+
 .nav_link::after {
-content: "";
-display: block;
-width: 100%;
-height: 0.1em;
-opacity: 0;
-transition: opacity 0.3s linear;
-background-color: black;
-position: absolute;
-top: 100%;
-left: 0;
-z-index: 1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.1em;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
 }
 
 .nav_link:hover::after {
-opacity: 1;
+    opacity: 1;
 }
 
 
 
 /*BIG BANNER*/
 .intro {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /*AVERAGE BANNER*/
-.banner1, .banner2 {
-  width: 50%;
-  height: 50%;
-  float: left;
-  box-sizing: border-box;
+.banner1,
+.banner2 {
+    width: 50%;
+    height: 50%;
+    float: left;
+    box-sizing: border-box;
 }
 
 
@@ -151,57 +159,58 @@ opacity: 1;
 
 /*SMALL SCROLL-BANNER*/
 .slider-wrapper .slide-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 50px;
-  width: 50px;
-  color: black;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 2.2rem;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: 100;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2.2rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
 }
+
 .slider-wrapper .slide-button#prev-slide {
-  left: -20px;
+    left: -20px;
 }
 
 .slider-wrapper .slide-button#next-slide {
-  right: -20px;
+    right: -20px;
 }
 
 
 .slider-wrapper {
-  clear: both;
-  margin-top: 20px;
-  position: relative;
+    clear: both;
+    margin-top: 20px;
+    position: relative;
 }
 
 .slider-wrapper .image-list {
-  display: flex;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  justify-content: space-around;
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding-bottom: 20px; /
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: space-around;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 20px;/
 }
 
-.slider-wrapper .image-list::-webkit-scrollbar{
-  display: none;
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
 }
 
 .slider-wrapper .image-list .image-item {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .container2 {
-  max-width: 100%;
-  width: 95%;
-  margin: 0 auto;
+    max-width: 100%;
+    width: 95%;
+    margin: 0 auto;
 }
 
 
@@ -210,156 +219,203 @@ opacity: 1;
 
 /* SCROLLBAR */
 ::-webkit-scrollbar {
-  width: 1.5em;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background:#555;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #fc6203;
+    width: 1.5em;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fc6203;
+}
+
+.pusto {
+    height: 100px;
+}
+
+
+
 .product {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .product .image {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .product .image img {
-  transition: filter 0.3s;
+    transition: filter 0.3s;
+    display: block;
+    margin: auto;
 }
 
 .product .image::after {
-  content: "Состав Хлопок - 100%\A Материал подкладки Без подкладки\A Сезон мульти\A Цвет черный\A\A\A\A\A\A\A\A\A\A  9000р";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  white-space: pre;
-  padding: 20px;
-  font-size: 16px;
+    content: "\A\A\A\A\A\A\AСостав Хлопок - 100%\A Материал подкладки Без подкладки\A Сезон мульти\A Цвет черный\A\A\A\A\A\A\A\A\A\A  9000р";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: pre;
+    padding: 20px;
+    font-size: 16px;
 }
 
 .product .image:hover::after {
-  opacity: 1;
+    opacity: 1;
 }
 
-.product .image .add {
+
+.image {
+    width: 50%;
+    height: 50%;
+    float: right;
+    /* Первое изображение будет прижато к левому краю */
+
+}
+
+.product .image:hover .minus,
+.plus {
+    opacity: 1;
+}
+
+.product .minus,
+.plus {
+    font-size: 10px;
+    position: relative;
+}
+
+.kol-vo,
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+
+.add a{
+  display: block;
+  width: 27%;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.add a span{
+  position: relative;
+  z-index: 2;
+}
+
+.add a:after{
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  opacity: 0;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fc6203;
+  transition: all .35s;
 }
 
-.product .image:hover .add {
-  opacity: 1;
-}
-.product .add {
-
-  font-size: 30px;
-  position:relative;
+.add a:hover:after,
+.add a:active:after {
   width: 100%;
 }
-.image {
-  width: 50%;
-  float: left; /* Первое изображение будет прижато к левому краю */
+
+.add a:active {
+  color: #fff;
 }
-
-.image:nth-child(2) {
-  float: right; /* Второе изображение будет прижато к правому краю */
-}
-
-
-
 
 /*footer*/
 .row {
-  background: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 250px;
-  transition: background-color 0.3s;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    transition: background-color 0.3s;
 }
 
 .row:hover {
-  background-color: #fc6203;
+    background-color: #fc6203;
 }
 
 .social-icons {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  left: -6%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: -6%;
 }
 
 h3 {
-  position: absolute;
-  top: -30px;
-  right: 20px;
-  margin: 0;
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    margin: 0;
 }
 
 .info {
-  margin: 0;
-  position: relative;
-  display: flex;
-  right: -48%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    right: -48%;
 }
 
 .logo {
-  margin: 0;
-  position: absolute;
-  display: flex;
-  right: 80%;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    right: 80%;
 }
 
 .col-md-3 a {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 .social-icons img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
 }
 
 .social-icons a:hover img {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
 .nav-item:hover {
-  margin-bottom: 5px;
-  margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 
@@ -367,114 +423,124 @@ h3 {
 
 /* Медиа-запросы для различных разрешений */
 @media (min-width: 1025px) {
-  /* Дополнительные стили для экранов шириной 1025px и более */
+    /* Дополнительные стили для экранов шириной 1025px и более */
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* Дополнительные стили для экранов с шириной от 769px до 1024px */
+    /* Дополнительные стили для экранов с шириной от 769px до 1024px */
 }
 
 @media (max-width: 768px) {
-  /* Дополнительные стили для экранов с шириной 768px и менее */
+
+    /* Дополнительные стили для экранов с шириной 768px и менее */
+    .product .image::after {
+        display: none;
+    }
 }
 }
 
 
 /*Burger-menu*/
-.nav{
-  display: flex ;
+.nav {
+    display: flex;
 }
-.nav ul{
-  width: 20%;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+
+.nav ul {
+    width: 20%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
+
 .burger {
-  display: none;
-  position: relative;
-  z-index: 50;
-  align-items: center;
-  justify-content: flex-end;
-  width: 35px;
-  height: 18px;
-  cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 35px;
+    height: 18px;
+    cursor: pointer;
 }
 
 .burger span {
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background-color: orange;
-  transition: all 0.3s ease 0s;
-  border-radius: 10px;
-  display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: orange;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    display: block;
 }
 
 .burger::before,
 .burger::after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background-color: orange;
-  border-radius: 10px;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: orange;
+    border-radius: 10px;
 }
 
 .burger::before {
-  top: 0;
+    top: 0;
 }
 
 .burger::after {
-  bottom: 0;
+    bottom: 0;
 }
 
 .burger.active span {
-  transform: scale(0);
+    transform: scale(0);
 }
 
 .burger.active::before {
-  top: 50%;
-  transform: rotate(-45deg) translate(0, -50%);
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
 }
 
 .burger.active::after {
-  top: 50%;
-  transform: rotate(45deg) translate(0, 50%);
+    top: 50%;
+    transform: rotate(45deg) translate(0, 50%);
 }
-
 
 
 /*Burger menu appears at max-width: 800px*/
 @media (max-width: 800px) {
 
-  .burger { display: flex }
-  .nav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    overflow-y: auto;
-    padding: 50px 40px;
-    background-color: white;
-    animation: burgerAnimation 0.4s;
-  }
-  .nav ul {
-    flex-direction: column;
-    row-gap: 30px;
-  }
+    .burger {
+        display: flex
+    }
 
-  @keyframes burgerAnimation {
-    from {
-      opacity: 0;
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: white;
+        animation: burgerAnimation 0.4s;
     }
-    to {
-      opacity: 1;
+
+    .nav ul {
+        flex-direction: column;
+        row-gap: 30px;
     }
- }
+
+    @keyframes burgerAnimation {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
